@@ -164,6 +164,7 @@ $(document).ready(function(){
     })
     $('.modal_window_bg').click(function(){
         $('.form_request_mobile').fadeOut()
+        $('.directions_modal').fadeOut()
         $('.modal_window_bg').fadeOut()
     })
 
