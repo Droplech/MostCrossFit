@@ -1495,7 +1495,9 @@ a{
 
 
 @media screen and (max-width: 800px){
-    
+    .directions_modal{
+        width: 80%;
+    }
     .directions_modal .btn{
         display: none;
     }
@@ -1748,6 +1750,14 @@ a{
     }
     .form_request_mobile .btn{
         width: 100%;
+    }
+    .directions_modal h3{
+        font-size: 25px;
+    }
+    .directions_modal{
+        overflow: auto;
+        height: 468px;
+        top: 10%;
     }
    
 }
