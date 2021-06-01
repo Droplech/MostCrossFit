@@ -187,6 +187,17 @@ $(document).ready(function(){
         $('.modal_window_bg').fadeIn()
         
     })
+
+
+
+    $('.send_whatsapp').click(function(){
+        $('.select').fadeOut()
+    })
+
+
+    $('.burger_menu ul li a').click(function(){
+        $('.burger_menu').fadeOut()
+    })
  
 })
 

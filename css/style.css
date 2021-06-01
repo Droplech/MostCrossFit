@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     background: #0E0E0E;
@@ -1758,6 +1761,16 @@ a{
         overflow: auto;
         height: 468px;
         top: 10%;
+    }
+    .treners_item .txt h3 {
+        font-size: 20px;
+    }
+    .treners_item .txt h4{
+        font-size: 18px;
+    }
+    .treners_item .txt p{
+        font-size: 14px;
+        line-height: 20px;
     }
    
 }
