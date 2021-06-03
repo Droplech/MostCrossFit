@@ -808,6 +808,7 @@ a{
 /* .photo_galery .tabs_content{
     display: none;
 } */
+
 .photo_galery .tabs_content.tabs_content-active{
     display: block !important;
 }
@@ -1366,9 +1367,18 @@ a{
 @media screen and (max-width: 1440px){
     .banner{
         overflow-x: hidden;
+        background-position-y: -54px;
+        background-position-x: -19px;
+        background-size: 105%;
+    }
+    .banner_wrapper .text h1{
+        font-size: 45px;
     }
     .banner::before{
-        right: -140px;
+        right: 144px;
+        top: 117px;
+        width: 477px;
+        height: 468px;
     }
     .sign_up_wrapper .img {
         width: 891px;
@@ -1391,7 +1401,25 @@ a{
 
 @media screen and (max-width: 1366px){
     .banner{
-        background-position-x: -192px;
+        background-position-y: -38px;
+        background-position-x: -22px;
+    }
+    .banner_wrapper .text h1 {
+        font-size: 39px;
+        line-height: 70px;
+    }
+    .banner::before{
+        right: 156px;
+        height: 450px;
+    }
+    .banner_wrapper .text h1 .two {
+        padding-left: 185px;
+    }
+    .banner_wrapper .text h1 .four {
+        padding-left: 290px;
+    }
+    .banner_wrapper .text h1 .six {
+        padding-left: 370px;
     }
     .treners_item .img{
         flex: 0 0 210px;
@@ -1433,6 +1461,14 @@ a{
     .social_links {
         width: 80px;
     }
+    .banner_wrapper .text h1{
+        font-size: 40px;
+    }
+    .banner::before{
+        height: 400px;
+        width: 368px;
+        right: 162px;
+    }
 }
 @media screen and (max-width: 1024px){
     .banner_wrapper .text{
@@ -1460,9 +1496,10 @@ a{
         font-size: 40px;
     }
     .banner::before{
-        width: 410px;
-        height: 474px;
-        right: 0;
+        width: 377px;
+        height: 364px;
+        right: 31px;
+        top: 83px;
     }
     .form_request{
         flex-wrap: wrap;
@@ -1498,20 +1535,20 @@ a{
         margin-top: 150px;
     }
     .banner_wrapper .text h1{
-        font-size: 30px;
+        font-size: 36px;
         line-height: 56px;
     }
     .banner_wrapper .text h1 .two {
         padding-left: 110px;
     }
     .banner_wrapper .text h1 .four {
-        padding-left: 298px;
+        padding-left: 223px;
     }
     .banner_wrapper .text h1 .six {
-        padding-left: 510px;
+        padding-left: 370px;
     }
     .banner {
-        background-position-x: -490px;
+        background-position-x: 0;
     }
 }
 
@@ -1589,8 +1626,11 @@ a{
         position: static !important;
     }
     .banner::before{
-        right: 180px;
+        right: 15px;
         border: 2px solid #252525;
+        width: 626px;
+        height: 627px;
+        transform: rotate(16deg);
     }
     .offers_list{
         justify-content: center;
@@ -1727,7 +1767,8 @@ a{
     .banner::before {
         width: 331px;
         height: 345px;
-        right: 0;
+        right: 29px;
+        top: 50px;
         transform: rotate(13.13deg);
     }
     h2{
@@ -1802,6 +1843,18 @@ a{
 
 
 
+@media screen and (max-width: 400px){
+    .banner{
+        overflow: hidden;
+    }
+    .banner::before {
+        width: 331px;
+        height: 345px;
+        right: -5px;
+        top: 50px;
+        transform: rotate(13.13deg);
+    }
+}
 
 
 
