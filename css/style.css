@@ -1390,6 +1390,9 @@ a{
 }
 
 @media screen and (max-width: 1366px){
+    .banner{
+        background-position-x: -192px;
+    }
     .treners_item .img{
         flex: 0 0 210px;
         height: 216px;
@@ -1494,10 +1497,29 @@ a{
     .photo_galery{
         margin-top: 150px;
     }
+    .banner_wrapper .text h1{
+        font-size: 30px;
+        line-height: 56px;
+    }
+    .banner_wrapper .text h1 .two {
+        padding-left: 110px;
+    }
+    .banner_wrapper .text h1 .four {
+        padding-left: 298px;
+    }
+    .banner_wrapper .text h1 .six {
+        padding-left: 510px;
+    }
+    .banner {
+        background-position-x: -490px;
+    }
 }
 
 
 @media screen and (max-width: 800px){
+    .banner{
+        background-image: none;
+    }
     .directions_modal{
         width: 80%;
     }
