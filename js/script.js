@@ -171,6 +171,10 @@ $(document).ready(function(){
     $('.directions_item').click(function(){
         $('.modal_window_bg').fadeIn()
         $('.directions_modal').fadeIn()
+        $('.directions_item').removeClass('directions_item-active')
+        $(this).addClass('directions_item-active')
+        $('.modal_content').removeClass('modal_content-active')
+        $( $(this).attr('data-tab') ).addClass('modal_content-active')
     })
 
 

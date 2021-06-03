@@ -861,7 +861,9 @@ a{
     margin-top: 38px;
     position: relative;
 }
-
+.treners_item .img img{
+    width: 100%;
+}
 .treners_item .img .icon{
     position: absolute;
     bottom: 24px;
@@ -1263,10 +1265,15 @@ a{
     
 }
 .photo_galery_mobile .tabs_list{
-    width: 70%;
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-
+.photo_galery_mobile .tabs_list a{
+    margin: 0 20px;
+    margin-bottom: 25px;
+}
 .reviews_mobile{
     display: none;
 }
@@ -1311,6 +1318,10 @@ a{
     position: absolute;
     top: 20px;
     right: 20px;
+    cursor: pointer;
+}
+.directions_modal .close_form:hover svg path{
+    fill: #fff;
 }
 .directions_modal h3{
     color: #D21900;
@@ -1338,6 +1349,14 @@ a{
 }
 
 
+
+.modal_content{
+    display: none;
+}
+
+.modal_content.modal_content-active{
+    display: block !important;
+}
 
 @media screen and (max-width: 1680px) {
     .banner::before{
@@ -1400,6 +1419,9 @@ a{
 }
 
 @media screen and (max-width: 1366px){
+    .directions_modal{
+        top: 13%;
+    }
     .banner{
         background-position-y: -38px;
         background-position-x: -22px;
