@@ -1760,6 +1760,7 @@ a{
     }
     .navigatin_wrapper .logo{
         width: 46px;
+        height: auto;
     }
     .contacts_info .btn{
         display: none;
