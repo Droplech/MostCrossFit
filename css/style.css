@@ -405,6 +405,7 @@ a{
 
 .directions_item img{
     width: 100%;
+    height: 100%;
 }
 
 
@@ -1415,6 +1416,14 @@ a{
     }
     .form_request form > div{
         width: 276px;
+    }
+    .photo_galery, .directions,
+    .treners, .price_block,
+    .sign_up, .contacts{
+        margin-top: 200px;
+    }
+    .price_item{
+        flex-basis: 24%;
     }
 }
 
