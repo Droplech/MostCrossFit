@@ -78,7 +78,14 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-
+.navigatin_wrapper .logo{
+    width: 85px;
+    height: 114px;
+}
+.navigatin_wrapper .logo img{
+    width: 100%;
+    
+}
 .nav_menu{
     width: 796px;
     padding: 0 10px;
