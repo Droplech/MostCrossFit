@@ -305,6 +305,9 @@ a{
 .offers_item .txt{
     width: 370px;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .offers_item h3{
     font-size: 24px;
@@ -444,7 +447,7 @@ a{
 }
 .price_list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 50px;
 }
@@ -454,6 +457,9 @@ a{
     border-radius: 5px;
     padding: 34px 30px 41px;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -464,7 +470,7 @@ a{
     color: #fff;
     margin-bottom: 37px;
 }
-.price_item .price_info{
+.price_item .price_info pre{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -781,6 +787,7 @@ a{
 
 .galery_slider_wrapper{
     padding-bottom: 30px;
+    padding-left: 20px;
 }
 
 .btn_slider{
@@ -795,6 +802,10 @@ a{
     width: 90px;
     height: 20px;
     margin: 0 auto;
+}
+.photo_galery .btn_slider{
+    width: 100%;
+    top: 44%;
 }
 .swiper-button-prev{
     padding-bottom: 14px;
@@ -829,7 +840,7 @@ a{
 .treners_slider_wrapper{
     display: flex;
     justify-content: center;
-    padding: 120px 0;
+    padding: 120px 0 35px;
 }
 .treners_slider_wrapper .swiper-slide{
     display: flex;
@@ -909,6 +920,13 @@ a{
 .treners_item .btn{
     margin-top: 30px;
 }
+
+.treners .btn_slider{
+    top: 50%;
+    width: 63%;
+}
+
+
 
 
 .reviews{
@@ -1079,6 +1097,14 @@ a{
 .contacts{
     margin-top: 230px;
 }
+
+.reviews .btn_slider{
+    top: 45%;
+    width: 65%;
+}
+
+
+
 
 .contacts_wrapper{
     display: flex;
@@ -1389,6 +1415,10 @@ a{
     .contacts_wrapper .map{
         width: 820px;
     }
+    .treners .btn_slider{
+        top: 50%;
+        width: 72%;
+    }
 }
 
 @media screen and (max-width: 1440px){
@@ -1431,6 +1461,10 @@ a{
     }
     .price_item{
         flex-basis: 24%;
+    }
+    .reviews .btn_slider {
+        top: 45%;
+        width: 85%;
     }
 }
 
@@ -1588,6 +1622,18 @@ a{
     .banner {
         background-position-x: 0;
     }
+    .photo_galery .btn_slider {
+        width: 100%;
+        top: 40%;
+    }
+    .treners .btn_slider {
+        top: 50%;
+        width: 94%;
+    }
+    .reviews .btn_slider {
+        top: 45%;
+        width: 88%;
+    }
 }
 
 
@@ -1744,6 +1790,10 @@ a{
     .reviews_mobile{
         display: block;
     }
+    .treners .btn_slider {
+        top: 50%;
+        width: 75%;
+    }
 
 
 
@@ -1877,6 +1927,14 @@ a{
     .photo_galery_mobile .tabs_list{
         flex-direction: column;
         align-items: center;
+    }
+    .treners .btn_slider{
+        top: 36%;
+        width: 100%;
+    }
+    .reviews_mobile .btn_slider{
+        top: 36%;
+        width: 100%;
     }
    
 }

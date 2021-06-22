@@ -92,6 +92,7 @@ $(document).ready(function(){
                 spaceBetween: 150,
             },
             1366:{
+                slidesPerView: 1.5,
                 spaceBetween: 200,
             },
             1440:{
