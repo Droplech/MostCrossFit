@@ -616,9 +616,7 @@ a{
     opacity: 0;
 }
 
-.checkbox_block .check:checked + .fake svg{
-    opacity: 1;
-}
+
 
 
 
@@ -626,9 +624,14 @@ a{
     margin-top: 15px;
 }
 
-.check_perens.active .fake svg{
+
+.check_perens.label-active .fake svg{
     opacity: 1;
 }
+
+
+
+
 
 
 .select {

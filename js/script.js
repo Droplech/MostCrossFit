@@ -193,15 +193,30 @@ $(document).ready(function(){
         
     })
 
-
-
-    $('.send_whatsapp').click(function(){
-        $('.select').fadeOut()
-    })
+  
+    
 
 
     $('.burger_menu ul li a').click(function(){
         $('.burger_menu').fadeOut()
+    })
+
+
+
+
+   
+
+
+    $('.check_perens').click(function(){
+        $('.check_perens').removeClass('label-active')
+        $(this).addClass('label-active')
+    })
+
+    $('.send_phone').click(function(){
+        $('.select').fadeIn()
+    })
+    $('.send_whatsapp').click(function(){
+        $('.select').fadeOut()
     })
  
 })
