@@ -377,6 +377,7 @@ a{
 .directions_item{
     flex-basis: 33.33%;
     position: relative;
+    cursor: pointer;
 }
 
 
@@ -387,8 +388,10 @@ a{
     top: 50%;
     height: 70px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px 0;
     
 }
 .directions_item::before{
@@ -412,7 +415,11 @@ a{
     font-size: 18px;
     text-shadow: 0px 0px 21px #FFFFFF;
 }
+.directions_item .txt span{
+    color: #fff;
+    font-size: 13px;
 
+}
 .directions_item img{
     width: 100%;
     height: 100%;
