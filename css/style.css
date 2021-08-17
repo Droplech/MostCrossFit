@@ -44,6 +44,96 @@ a{
 */
 
 
+
+
+
+
+
+/* -----------------Для двух форм------------------------------------- */
+
+
+.modal_appointment_coach,
+.modal_buy_price{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: none;
+}
+.modal_appointment_coach .form_request,
+.modal_buy_price .form_request{
+    flex-direction: column;
+    padding: 34px 36px;
+    
+}
+.modal_appointment_coach .form_request .close_form,
+.modal_buy_price .form_request .close_form{
+    display: block;
+    text-align: right;
+    cursor: pointer;
+}
+.modal_appointment_coach .form_request .close_form:hover svg path,
+.modal_buy_price .form_request .close_form:hover svg path{
+    fill: #fff;
+    
+}
+.modal_appointment_coach .form_request form,
+.modal_buy_price .form_request form{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+}
+.modal_appointment_coach .form_request form div,
+.modal_buy_price .form_request form div{
+    margin-bottom: 40px;
+}
+.modal_appointment_coach .form_request form button,
+.modal_buy_price .form_request form button{
+    margin: 0 auto;
+}
+
+
+.modal_appointment_coach .form_request h3,
+.modal_buy_price .form_request h3{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+@media screen and (max-width:800px) {
+
+    .modal_appointment_coach .form_request,
+    .modal_buy_price .form_request{
+        display: block;
+    }
+}
+
+
+
+/* -----------------Для двух форм------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn_mob{
+    display: none !important;
+}
+
 .btn{
     width: 235px;
     height: 58px;
@@ -183,7 +273,7 @@ a{
 
 
 .banner{
-    background-image: url('../img/top_b/img.png');
+    background-image: url('../img_new/top_b/img.png');
     background-position-y: -170px;
     background-position-x: 40px;
     position: relative;
@@ -363,7 +453,7 @@ a{
 
 
 .directions{
-    margin-top: 297px;
+    margin-top: 100px;
 }
 
 
@@ -450,7 +540,7 @@ a{
 
 
 .price_block{
-    margin-top: 300px;
+    margin-top: 100px;
 }
 .price_list{
     display: flex;
@@ -749,6 +839,7 @@ a{
 .galery_slider_item .photo img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .photo_galery_wrapper .tabs_list{
@@ -1402,7 +1493,7 @@ a{
     display: block !important;
 }
 
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1700px) {
     .banner::before{
         top: 50px;
         right: 50px;
@@ -1804,9 +1895,19 @@ a{
         top: 50%;
         width: 75%;
     }
-
-
-
+    
+    /* .directions_item .txt{
+        top: 30%;
+    } */
+    .offers_item .btn{
+        display: none;
+    }
+    .btn_mob{
+        display: flex !important;
+    }
+    .btn_burger_block .btn{
+        display: none;
+    }
 
     
 }
@@ -1946,6 +2047,7 @@ a{
         top: 36%;
         width: 100%;
     }
+    
    
 }
 

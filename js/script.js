@@ -96,13 +96,17 @@ $(document).ready(function(){
                 spaceBetween: 200,
             },
             1440:{
+                slidesPerView: 1.3,
                 spaceBetween: 150,
             },
             1680:{
-                slidesPerView: 1.5,
+                slidesPerView: 1.3,
                 spaceBetween: 30,
+            },
+            1800:{
+                slidesPerView: 1.5,
             }
-           
+            
         }
         
     })
@@ -163,10 +167,16 @@ $(document).ready(function(){
         $('.modal_window_bg').fadeOut()
         $('.directions_modal').fadeOut()
     })
+    $('.btn_closeForm').click(function(){
+        $('.form_request_mobile').fadeOut()
+        $('.modal_window_bg').fadeOut()
+        $('.directions_modal').fadeOut()
+    })
     $('.modal_window_bg').click(function(){
         $('.form_request_mobile').fadeOut()
         $('.directions_modal').fadeOut()
         $('.modal_window_bg').fadeOut()
+        
     })
 
     $('.directions_item').click(function(){
@@ -193,6 +203,13 @@ $(document).ready(function(){
         
     })
 
+
+
+
+
+
+
+    
   
     
 
@@ -224,3 +241,72 @@ $(document).ready(function(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -----------------Для двух форм-------------------------------------
+
+
+
+
+
+$('.treners_item .form_trener').click(function(e){
+    e.preventDefault()
+    $('.modal_appointment_coach').fadeIn()
+    $('.modal_window_bg').fadeIn()
+})
+$('.modal_window_bg').click(function(){
+    $('.modal_appointment_coach').fadeOut()
+})
+$('.modal_appointment_coach .close_form').click(function(){
+    $('.modal_appointment_coach').fadeOut()
+    $('.modal_window_bg').fadeOut()
+})
+
+
+$('.modal_appointment_coach button').click(function(e){
+    e.preventDefault()
+    $('.modal_appointment_coach').fadeOut()
+    $('.modal_window_bg').fadeOut()
+})
+
+
+
+
+$('.price_item .modal_price').click(function(e){
+    e.preventDefault()
+    $('.modal_buy_price').fadeIn()
+    $('.modal_window_bg').fadeIn()
+})
+$('.modal_window_bg').click(function(){
+    $('.modal_buy_price').fadeOut()
+})
+$('.modal_buy_price .close_form').click(function(){
+    $('.modal_buy_price').fadeOut()
+    $('.modal_window_bg').fadeOut()
+})
+
+$('.modal_buy_price button').click(function(e){
+    e.preventDefault()
+    $('.modal_buy_price').fadeOut()
+    $('.modal_window_bg').fadeOut()
+})
+
+
+// -----------------Для двух форм-------------------------------------
